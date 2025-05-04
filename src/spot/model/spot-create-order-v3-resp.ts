@@ -15,7 +15,7 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SpotCreateOrderV3RespFillsInner } from './spot-create-order-v3-resp-fills-inner';
+import type { MarginCreateMarginOrderV1RespFillsInner } from './margin-create-margin-order-v1-resp-fills-inner';
 
 /**
  * 
@@ -43,10 +43,10 @@ export interface SpotCreateOrderV3Resp {
     'executedQty'?: string;
     /**
      * 
-     * @type {Array<SpotCreateOrderV3RespFillsInner>}
+     * @type {Array<MarginCreateMarginOrderV1RespFillsInner>}
      * @memberof SpotCreateOrderV3Resp
      */
-    'fills'?: Array<SpotCreateOrderV3RespFillsInner>;
+    'fills'?: Array<MarginCreateMarginOrderV1RespFillsInner>;
     /**
      * 
      * @type {number}

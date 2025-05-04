@@ -15,7 +15,7 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SpotCreateOrderListOcoV3RespOrdersInner } from './spot-create-order-list-oco-v3-resp-orders-inner';
+import type { CreateMarginOrderOcoV1RespOrdersInner } from './create-margin-order-oco-v1-resp-orders-inner';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { SpotDeleteOpenOrdersV3RespOrderItem } from './spot-delete-open-orders-v3-resp-order-item';

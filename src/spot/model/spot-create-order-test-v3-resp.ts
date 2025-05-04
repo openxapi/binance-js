@@ -15,7 +15,7 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SpotCreateOrderTestV3RespDiscount } from './spot-create-order-test-v3-resp-discount';
+import type { GetAccountCommissionV3RespDiscount } from './get-account-commission-v3-resp-discount';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { SpotCreateOrderTestV3RespStandardCommissionForOrder } from './spot-create-order-test-v3-resp-standard-commission-for-order';
@@ -28,10 +28,10 @@ import type { SpotCreateOrderTestV3RespStandardCommissionForOrder } from './spot
 export interface SpotCreateOrderTestV3Resp {
     /**
      * 
-     * @type {SpotCreateOrderTestV3RespDiscount}
+     * @type {GetAccountCommissionV3RespDiscount}
      * @memberof SpotCreateOrderTestV3Resp
      */
-    'discount'?: SpotCreateOrderTestV3RespDiscount;
+    'discount'?: GetAccountCommissionV3RespDiscount;
     /**
      * 
      * @type {SpotCreateOrderTestV3RespStandardCommissionForOrder}

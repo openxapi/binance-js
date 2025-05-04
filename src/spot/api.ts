@@ -14,9 +14,14 @@
 
 
 
-export * from './api/account-api';
-export * from './api/general-api';
-export * from './api/market-data-api';
-export * from './api/trading-api';
-export * from './api/user-data-stream-api';
+export * from './api/algo-trading-api';
+export * from './api/binance-link-api';
+export * from './api/convert-api';
+export * from './api/copy-trading-api';
+export * from './api/futures-data-api';
+export * from './api/margin-trading-api';
+export * from './api/portfolio-margin-pro-api';
+export * from './api/spot-trading-api';
+export * from './api/sub-account-api';
+export * from './api/wallet-api';
 

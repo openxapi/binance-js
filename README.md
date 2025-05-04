@@ -45,29 +45,18 @@ npm install @openxapi/binance --save
 
 ### Modules
 
-| Product | Module |
-|--------|-------------|
-| Spot API | `spot` |
-| USD-M Futures API | `derivatives.umfutures` |
-| COIN-M Futures API | `derivatives.cmfutures` |
-| Options API | `derivatives.options` |
-| Portfolio Margin API | `derivatives.pmargin` |
-| Portfolio Margin Pro API | `derivatives.pmarginpro` |
-| Futures Data API | `derivatives.futuresdata` |
-| Margin API | `margin` |
-| Subaccount API | `subaccount` |
-| Convert API | `convert` |
-| Wallet API | `wallet` |
-| Copy Trading API | `copytrading` |
-| Algo Trading API | `algo` |
+| Product | Module | Sub Products |
+|:--------:|:-------------:|-------------|
+| Spot API | `spot` | ✅ Spot Trading <br> ✅ Margin Trading <br> ✅ Algo Trading <br> ✅ Wallet <br> ✅ Copy Trading <br> ✅ Convert <br> ✅ Sub Account <br>✅ Binance Link <br>✅ Futures Data <br> ✅ Portfolio Margin Pro |
+| USD-M Futures API | `umfutures` | ✅ USDS-M Futures |
+| COIN-M Futures API | `cmfutures` | ✅ COIN-M Futures |
+| Options API | `options` | ✅ Options |
+| Portfolio Margin API | `pmargin` | ✅ Portfolio Margin |
 
 ### Usage
 
 ```typescript
-import { spot, derivatives } from '@openxapi/binance';
-
-// Create an alias for derivatives.umfutures
-const { umfutures } = derivatives;
+import { spot, umfutures } from '@openxapi/binance';
 
 async function testSpot() {
   // Initialize the Binance API client
@@ -75,12 +64,12 @@ async function testSpot() {
     auth: new spot.BinanceAuth({
         // get from env variables
         apiKey: process.env.BINANCE_API_KEY!,
-        privateKeyPath: "/path/to/binance_api_private_key.pem", // Automatically detects RSA or Ed25519 keys
+        privateKeyPath: "/path/to/your/private/key", // Automatically detects RSA or Ed25519 keys
     }),
   });
   
-  const apiInstance = new spot.AccountApi(config);
-  const resp = await apiInstance.spotGetAccountV3({
+  const apiInstance = new spot.SpotTradingApi(config);
+  const resp = await apiInstance.GetAccountV3({
     timestamp: Date.now(),
   });
   console.log(resp);
@@ -91,12 +80,12 @@ async function testUmFutures() {
     const config = new umfutures.Configuration({
         auth: new umfutures.BinanceAuth({
             apiKey: process.env.BINANCE_API_KEY!,
-            privateKeyPath: "/path/to/binance_api_private_key.pem", // Automatically detects RSA or Ed25519 keys
+            privateKeyPath: "/path/to/your/private/key", // Automatically detects RSA or Ed25519 keys
         }),
     });
 
-    const apiInstance = new umfutures.MarketDataApi(config);
-    const resp = await apiInstance.umfuturesGetKlinesV1({
+    const apiInstance = new umfutures.UsdsMarginedFuturesApi(config);
+    const resp = await apiInstance.GetKlinesV1({
         symbol: 'BTCUSDT',
         interval: '1h',
     });

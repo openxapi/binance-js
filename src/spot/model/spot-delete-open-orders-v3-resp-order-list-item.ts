@@ -15,7 +15,7 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SpotCreateOrderListOcoV3RespOrdersInner } from './spot-create-order-list-oco-v3-resp-orders-inner';
+import type { CreateMarginOrderOcoV1RespOrdersInner } from './create-margin-order-oco-v1-resp-orders-inner';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { SpotDeleteOpenOrdersV3RespOrderItem } from './spot-delete-open-orders-v3-resp-order-item';
@@ -64,10 +64,10 @@ export interface SpotDeleteOpenOrdersV3RespOrderListItem {
     'orderReports'?: Array<SpotDeleteOpenOrdersV3RespOrderItem>;
     /**
      * 
-     * @type {Array<SpotCreateOrderListOcoV3RespOrdersInner>}
+     * @type {Array<CreateMarginOrderOcoV1RespOrdersInner>}
      * @memberof SpotDeleteOpenOrdersV3RespOrderListItem
      */
-    'orders'?: Array<SpotCreateOrderListOcoV3RespOrdersInner>;
+    'orders'?: Array<CreateMarginOrderOcoV1RespOrdersInner>;
     /**
      * 
      * @type {string}
