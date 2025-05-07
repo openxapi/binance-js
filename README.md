@@ -47,11 +47,11 @@ npm install @openxapi/binance --save
 
 | Product | Module | Sub Products |
 |:--------:|:-------------:|-------------|
-| Spot API | `spot` | ✅ Spot Trading <br> ✅ Margin Trading <br> ✅ Algo Trading <br> ✅ Wallet <br> ✅ Copy Trading <br> ✅ Convert <br> ✅ Sub Account <br>✅ Binance Link <br>✅ Futures Data <br> ✅ Portfolio Margin Pro |
-| USD-M Futures API | `umfutures` | ✅ USDS-M Futures |
-| COIN-M Futures API | `cmfutures` | ✅ COIN-M Futures |
-| Options API | `options` | ✅ Options |
-| Portfolio Margin API | `pmargin` | ✅ Portfolio Margin |
+| Spot API | `spot` | ✅ [Spot Trading](https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information) <br> ✅ [Margin Trading](https://developers.binance.com/docs/margin_trading/Introduction) <br> ✅ [Algo Trading](https://developers.binance.com/docs/algo/Introduction) <br> ✅ [Wallet](https://developers.binance.com/docs/wallet/Introduction) <br> ✅ [Copy Trading](https://developers.binance.com/docs/copy_trading/Introduction) <br> ✅ [Convert](https://developers.binance.com/docs/convert/Introduction) <br> ✅ [Sub Account](https://developers.binance.com/docs/sub_account/Introduction) <br>✅ [Binance Link](https://developers.binance.com/docs/binance_link/change-log) <br>✅ [Futures Data](https://developers.binance.com/docs/derivatives/futures-data/general-info) <br> ✅ [Portfolio Margin Pro](https://developers.binance.com/docs/derivatives/portfolio-margin-pro/general-info) <br>✅ [Staking](https://developers.binance.com/docs/staking/Introduction) <br>✅ [Dual Investment](https://developers.binance.com/docs/dual_investment/Introduction) <br>✅ [Mining](https://developers.binance.com/docs/mining/Introduction) <br>✅ [Crypto Loan](https://developers.binance.com/docs/crypto_loan/Introduction) <br>✅ [VIP Loan](https://developers.binance.com/docs/vip_loan/Introduction) <br>✅ [C2C](https://developers.binance.com/docs/c2c/Introduction) <br>✅ [Fiat](https://developers.binance.com/docs/fiat/Introduction) <br>✅ [NFT](https://developers.binance.com/docs/nft/Introduction) <br>✅ [Gift Card](https://developers.binance.com/docs/gift_card/Introduction) <br>✅ [Rebate](https://developers.binance.com/docs/rebate/Introduction) <br>✅ [Simple Earn](https://developers.binance.com/docs/simple_earn/Introduction) <br>✅ [Binance Pay History](https://developers.binance.com/docs/pay/Introduction) |
+| USD-M Futures API | `umfutures` | ✅ [USDS Margined Futures](https://developers.binance.com/docs/derivatives/usds-margined-futures/general-info) <br> ✅ [Binance Link](https://developers.binance.com/docs/binance_link/link-and-trade/futures) |
+| COIN-M Futures API | `cmfutures` | ✅ [COIN Margined Futures](https://developers.binance.com/docs/derivatives/coin-margined-futures/general-info) |
+| Options API | `options` | ✅ [Options](https://developers.binance.com/docs/derivatives/option/general-info) |
+| Portfolio Margin API | `pmargin` | ✅ [Portfolio Margin](https://developers.binance.com/docs/derivatives/portfolio-margin/general-info) |
 
 ### Usage
 
